@@ -24,6 +24,22 @@
     
             </tbody>
         </table>
+        <form action='/new_destination' id='myForm' method='post'>
+            <label for="user_name">Name: </label>
+            <input type='text' name='user_name'>
+            <br>
+            <label for="email">Email: </label>
+            <input type='text' name='email'>
+            <br>
+            <input type='submit' id='submit_btn' value='Submit'>
+        </form>
+    </div>
+    <div class="col-4">
+        <form id="searchForm" onsubmit="search(event)" >
+            <h2>Search</h2>
+            <input type="text" name="query">
+            <input type="submit" value="Search" >
+        </form>
     </div>
 
 
